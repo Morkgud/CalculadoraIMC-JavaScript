@@ -14,18 +14,12 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  align-items: center; 
   color: white;
 }
 
 .hide {
   display: none !important;
-}
-
-/* Estilos para o cabeçalho */
-header {
-  background-color: #1a237e;
-  padding: 1rem;
-  text-align: center;
 }
 
 /* Estilos para o cabeçalho */
@@ -39,6 +33,7 @@ header {
   width: 100%;
   z-index: 9999;
   border-bottom: solid #fff;
+  margin-bottom: 40px;
 }
 
 header h1 {
@@ -52,6 +47,7 @@ header h1 {
 
 .separador-footer{
   margin-top: 1rem;
+  color: #fff;
 }
 
 /*Rodapé */
@@ -67,27 +63,32 @@ footer {
   bottom: 0;
 }
 
+.texto-footer{
+  font-weight: bold
+}
+
 footer p {
   color: white;
   font-size: 14px;
+  font-weight: bolder;
 }
 
 /* Estilos para o container */
 .container {
   background-color: #1a237e;
   max-height: 650px;
-  width: 450px;
-  padding: 2rem;
+  width: 500px;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 40px auto;
+  margin: 10px 10px;
   border: solid #fff;
-  border-radius: 12%;
-  margin-bottom: 40px; /* Adicione esta margem para criar espaço entre o container e o footer */
-  transform: scale(1); /* Definindo a escala padrão do container */
-  transition: transform 1s; /* Adicionando a transição para a propriedade transform */
+  border-radius: 4%;
+  margin-bottom: 40px; 
+  transform: scale(1); 
+  transition: transform 1s; 
 }
 
 .container:hover{
@@ -120,7 +121,11 @@ footer p {
 }
 
 .form-control input{
-  padding: 1rem 0.5rem;
+  padding: 0.8rem 0.5rem;
+}
+
+#gender{
+  padding: 0.8rem 0.5rem;
 }
 
 .action-control{
@@ -222,7 +227,7 @@ button:hover{
   }
 }
 
-/* Estilos para dispositivos com largura menor ou igual a 1024px (exemplo: tablets maiores e telas menores de desktop) */
+/* Estilos para dispositivos com largura menor ou igual a 1024px */
 @media only screen and (max-width: 1024px) {
   .container {
     max-width: 90%;
@@ -230,7 +235,6 @@ button:hover{
 }
 
 /*Javascript*/
-
 #back-btn{
   align-self: center;
 }

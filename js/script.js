@@ -80,8 +80,15 @@ function validDigits(text) {
   return text.replace(/[^0-9,]/g, "");
 }
 
-function calcImc(height, weight) {
-  const imc = (weight / (height * height)).toFixed(1);
+function calcImc(height, weight, gender) {
+  let imc;
+
+  if (gender === "male") {
+    imc = (weight / (height * height)).toFixed(1);
+  } else if (gender === "female") {
+    imc = (0.9 * (weight / (height * height))).toFixed(1);
+  }
+
   return imc;
 }
 
@@ -114,10 +121,11 @@ calcBtn.addEventListener("click", (e) => {
 
   const weight = +weightInput.value.replace(",", ".");
   const height = +heightInput.value.replace(",", ".");
+  const gender = document.getElementById("gender").value;
 
   if (!weight || !height) return;
 
-  const imc = calcImc(height, weight);
+  const imc = calcImc(height, weight, gender);
   let info;
 
   data.forEach((item) => {

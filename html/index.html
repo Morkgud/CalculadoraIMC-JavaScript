@@ -13,6 +13,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon-32x32.png">
     <script src="../js/script.js" defer></script>
   </head>
   <body>
@@ -51,6 +52,14 @@
                 placeholder="Exemplo 70,5 KG"
               />
             </div>
+            <div class="form-control">
+              <label for="gender">Gênero:</label>
+              <select id="gender" name="gender" required>
+                <option value="male">Masculino</option>
+                <option value="female">Feminino</option>
+                
+              </select>
+            </div>
           </div>
           <div class="action-control">
             <button id="calc-btn">Calcular</button>
@@ -74,11 +83,11 @@
     </div>
 
     <footer>
-      <p>
+      <p class="texto-footer">
         Esta calculadora é apenas uma ferramenta de referência e não substitui a consulta a um profissional de saúde.
         Sempre consulte um médico para obter uma avaliação completa e personalizada do seu estado de saúde.
       </p>
-      <p class="separador-footer">Feito por José Arthur De Siqueira Vieira</p>
+      <a href="https://github.com/Morkgud" class="separador-footer">Feito por José Arthur De Siqueira Vieira</a>
     </footer>
   </body>
 </html>
