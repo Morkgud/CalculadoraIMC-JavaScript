@@ -1,2 +1,2 @@
 # CalculadoraIMC-JavaScript
- Projeto de uma calculadora em javascript, html e css que calcula o Imc de um indivíduo
+ A Calculadora de IMC (Índice de Massa Corporal) é um projeto web desenvolvido utilizando JavaScript, HTML e CSS, com o objetivo de calcular o IMC de um indivíduo de forma simples e rápida. O IMC é uma medida utilizada para avaliar se uma pessoa está dentro de faixas consideradas saudáveis em relação ao seu peso e altura, sendo amplamente utilizado como uma ferramenta de avaliação do estado nutricional.
