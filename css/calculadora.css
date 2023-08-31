@@ -42,7 +42,7 @@ header h1 {
 }
 
 .separador{
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
 }
 
 .separador-footer{
@@ -58,9 +58,9 @@ footer {
   width: 100%;
   flex-shrink: 0;
   border-top: solid #fff;
-  z-index: 9999;
   position: bottom;
   bottom: 0;
+  margin-top: auto; 
 }
 
 .texto-footer{
